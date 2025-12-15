@@ -19,134 +19,83 @@ import {
 
 export const metadata = {
   title: "Our Services | VMARTELOZO Global Accounting LLC",
-  description: "Complete accounting, tax, and business formation services in the USA. LLC formation, bookkeeping, tax preparation, and financial management for entrepreneurs.",
+  description: "Advanced technical consulting for US SMBs: Accounting Governance, Tax Compliance, Automation, and Team Training. We fix accounting chaos with the Valtax Methodology.",
 };
 
 const services = [
   {
-    id: "company-formation",
-    icon: Building2,
-    title: "Company Formation",
-    subtitle: "Start Your US Business the Right Way",
-    description: "We handle the complete process of forming your LLC or Corporation in the United States, ensuring compliance with all federal and state requirements.",
+    id: "governance",
+    icon: Shield,
+    title: "Accounting Governance & Tax Compliance",
+    subtitle: "Reorganize and Structure Your Business",
+    description: "We identify errors, correct failures, standardize processes, and create internal controls that prevent penalties, inconsistencies, and IRS audits. This is the foundation of real fiscal governance.",
     features: [
-      "LLC and Corporation formation in any US state",
-      "EIN (Employer Identification Number) registration",
-      "State registration and compliance",
-      "Operating Agreement preparation",
-      "Registered Agent services",
-      "Bank account opening assistance",
-      "Business license guidance"
+      "Accounting maturity diagnostic",
+      "Risk matrix and gap analysis",
+      "Process standardization and documentation",
+      "Internal controls implementation",
+      "ERP correction and parameterization",
+      "Audit trails creation",
+      "Full IRS/GAAP/IFRS compliance"
     ],
-    highlight: "Most popular for Brazilian entrepreneurs"
+    highlight: "Foundation of fiscal governance"
   },
   {
-    id: "accounting",
-    icon: Calculator,
-    title: "Accounting & Bookkeeping",
-    subtitle: "Keep Your Finances Organized",
-    description: "Professional bookkeeping services to maintain accurate financial records, ensuring your business stays compliant and you have clear visibility into your finances.",
+    id: "automation",
+    icon: BarChart3,
+    title: "Automation, Systems & KPIs",
+    subtitle: "Technology + Precision",
+    description: "We integrate systems (QuickBooks, SAP B1, NetSuite), correct parameterizations, and create automations that reduce rework and strengthen data accuracy. Real-time visibility into your business performance.",
     features: [
-      "Monthly bookkeeping and reconciliation",
-      "Financial statement preparation",
-      "Accounts payable and receivable management",
-      "Bank reconciliation",
-      "QuickBooks setup and management",
-      "Cash flow monitoring",
-      "Financial reporting"
+      "ERP integration and optimization",
+      "Automated routine processes",
+      "Automated reconciliations",
+      "Performance dashboards",
+      "Compliance indicators and KPIs",
+      "Data accuracy validation",
+      "Real-time financial reporting"
     ],
-    highlight: "Essential for IRS compliance"
+    highlight: "Reduce errors with technology"
   },
   {
-    id: "tax",
-    icon: FileText,
-    title: "Tax Services",
-    subtitle: "Stay Compliant with the IRS",
-    description: "Expert tax preparation and filing services for individuals and businesses. We ensure you meet all federal and state tax obligations while maximizing legitimate deductions.",
+    id: "training",
+    icon: Users,
+    title: "Training & Ongoing Support",
+    subtitle: "Maintain Standards Long-Term",
+    description: "We don&apos;t replace your accountant — we teach your team to operate correctly, maintaining standards and reducing future errors. Continuous support ensures lasting results.",
     features: [
-      "Corporate tax preparation (Form 1120, 1120-S)",
-      "Partnership tax returns (Form 1065)",
-      "Individual tax preparation (Form 1040)",
-      "State tax filings",
-      "Quarterly estimated tax payments",
-      "Sales tax compliance",
-      "International tax considerations"
+      "Team training programs",
+      "Technical procedure manuals",
+      "Quarterly compliance reviews",
+      "Continuous preventive audits",
+      "Process improvement recommendations",
+      "Ongoing technical support",
+      "Knowledge transfer sessions"
     ],
-    highlight: "Avoid penalties and fines"
-  },
-  {
-    id: "consulting",
-    icon: TrendingUp,
-    title: "Tax Consulting",
-    subtitle: "Strategic Tax Planning",
-    description: "Proactive tax planning strategies to minimize your tax burden and maximize your business potential. We help you make informed decisions that benefit your bottom line.",
-    features: [
-      "Tax planning and optimization",
-      "Entity structure analysis",
-      "Tax-efficient business strategies",
-      "Retirement planning considerations",
-      "Investment tax planning",
-      "Cross-border tax planning",
-      "IRS audit representation"
-    ],
-    highlight: "Maximize your savings"
-  },
-  {
-    id: "administrative",
-    icon: Briefcase,
-    title: "Administrative Services",
-    subtitle: "Complete Business Support",
-    description: "Comprehensive administrative support to keep your business running smoothly. We handle the paperwork so you can focus on growing your business.",
-    features: [
-      "Registered Agent services",
-      "Annual report filings",
-      "Business license renewals",
-      "Corporate compliance management",
-      "Document preparation and filing",
-      "Business correspondence handling",
-      "Regulatory compliance monitoring"
-    ],
-    highlight: "Stay compliant year-round"
-  },
-  {
-    id: "financial",
-    icon: Globe,
-    title: "Financial Management",
-    subtitle: "Grow Your Business",
-    description: "Strategic financial management services to help your business thrive in the American market. We provide insights and guidance for sustainable growth.",
-    features: [
-      "Financial analysis and reporting",
-      "Budget planning and forecasting",
-      "Cash flow management",
-      "Profitability analysis",
-      "Business performance metrics",
-      "Growth strategy consulting",
-      "Financial decision support"
-    ],
-    highlight: "Data-driven decisions"
+    highlight: "Empower your team"
   }
 ];
 
 const processSteps = [
   {
-    icon: MessageCircle,
-    title: "Initial Contact",
-    description: "Reach out via website, WhatsApp, email, or Instagram to start the conversation."
-  },
-  {
-    icon: Users,
-    title: "Discovery Call",
-    description: "We discuss your specific needs, goals, and the best approach for your situation."
-  },
-  {
     icon: ClipboardList,
-    title: "Custom Proposal",
-    description: "Receive a detailed proposal tailored to your business requirements."
+    title: "Diagnostic",
+    description: "We assess your current accounting maturity, identify critical gaps, and map all compliance risks."
+  },
+  {
+    icon: Shield,
+    title: "Risk Analysis",
+    description: "We create a detailed risk matrix covering process failures, system issues, and IRS exposure."
   },
   {
     icon: FileCheck,
     title: "Implementation",
-    description: "We execute the plan efficiently while keeping you informed every step of the way."
+    description: "We restructure processes, fix ERP configurations, create internal controls, and establish audit trails."
+  },
+  {
+    icon: Users,
+    title: "Training & Support",
+    description: "We train your team on new procedures and provide ongoing preventive audits to maintain standards."
   }
 ];
 
@@ -159,12 +108,12 @@ export default function ServicesPage() {
           <div className="max-w-3xl">
             <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Our Services</span>
             <h1 className="text-4xl sm:text-5xl font-bold mt-2 mb-6">
-              Complete Business Solutions for the US Market
+              Advanced Technical Consulting for US SMBs
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
-              From company formation to ongoing financial management, we provide 
-              everything you need to start and grow your business in the United States 
-              with confidence and compliance.
+              We don&apos;t do basic accounting. We implement complete Accounting Governance + 
+              Tax Compliance + Automation within each SMB using our proprietary Valtax Methodology. 
+              High-value consulting focused on reorganization and continuous improvement.
             </p>
           </div>
         </div>
@@ -257,21 +206,21 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+              <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">What We Don&apos;t Do</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-6">
-                Your Success is Our Priority
+                We&apos;re Not a Routine Accounting Firm
               </h2>
               <p className="text-[var(--text-gray)] text-lg mb-8 leading-relaxed">
-                We combine expertise in both Brazilian and American business practices 
-                to provide you with unparalleled service and support.
+                We don&apos;t do daily entries, payroll, operational bookkeeping, or simple annual filings. 
+                We organize the entire system so all of that happens correctly.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Shield, title: "IRS Compliance", desc: "Full regulatory compliance" },
-                  { icon: Users, title: "Bilingual Support", desc: "English & Portuguese" },
-                  { icon: BarChart3, title: "Expert Guidance", desc: "Strategic business advice" },
-                  { icon: DollarSign, title: "Transparent Pricing", desc: "No hidden fees" }
+                  { icon: Shield, title: "Preventive Audits", desc: "Find problems before the IRS" },
+                  { icon: Users, title: "Team Training", desc: "Empower your internal staff" },
+                  { icon: BarChart3, title: "Real KPIs", desc: "Measurable compliance indicators" },
+                  { icon: DollarSign, title: "Better Cash Flow", desc: "Through process efficiency" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-[var(--beige)] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -287,10 +236,10 @@ export default function ServicesPage() {
             </div>
             
             <div className="bg-[var(--primary-blue)] rounded-2xl p-8 lg:p-12 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+              <h3 className="text-2xl font-bold mb-4">Ready to Fix Your Accounting Chaos?</h3>
               <p className="text-gray-200 mb-8">
-                Schedule a free consultation to discuss your business needs and 
-                discover how we can help you succeed in the US market.
+                Schedule a free consultation to discuss how we can restructure your 
+                processes, implement real governance, and prepare your business for growth.
               </p>
               <div className="space-y-4">
                 <Link

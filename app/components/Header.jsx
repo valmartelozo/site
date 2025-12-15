@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Phone, Mail, MessageCircle } from 'lucide-react';
 
 const navigation = [
@@ -49,14 +50,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex flex-col">
-              <span className="text-xl sm:text-2xl font-bold text-[var(--primary-blue)]">
-                VMARTELOZO
-              </span>
-              <span className="text-xs sm:text-sm text-[var(--gold)] font-medium tracking-wider">
-                Global Accounting LLC
-              </span>
-            </div>
+            <Image
+              src="/root/logo-val.png"
+              alt="VMARTELOZO Global Accounting LLC"
+              width={180}
+              height={48}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop navigation */}

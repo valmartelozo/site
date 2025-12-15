@@ -13,73 +13,56 @@ import {
   Globe,
   Briefcase
 } from "lucide-react";
+import Image from "next/image";
 
 const services = [
   {
-    icon: Building2,
-    title: "Company Formation",
-    description: "Complete LLC and Corporation formation services in the USA. We handle all paperwork, EIN registration, and state compliance.",
-    href: "/services#company-formation"
-  },
-  {
-    icon: Calculator,
-    title: "Accounting & Bookkeeping",
-    description: "Professional bookkeeping services to keep your financial records accurate, organized, and IRS-compliant.",
-    href: "/services#accounting"
-  },
-  {
-    icon: FileText,
-    title: "Tax Services",
-    description: "Expert tax preparation and filing for individuals and businesses. Stay compliant with federal and state tax requirements.",
-    href: "/services#tax"
+    icon: Shield,
+    title: "Accounting Governance & Tax Compliance",
+    description: "We restructure and organize your entire accounting and tax framework. Maturity diagnostics, risk matrix, process standardization, internal controls, and full IRS/GAAP/IFRS compliance.",
+    href: "/services#governance"
   },
   {
     icon: TrendingUp,
-    title: "Tax Consulting",
-    description: "Strategic tax planning to minimize your tax burden and maximize your business potential in the US market.",
-    href: "/services#consulting"
+    title: "Automation, Systems & KPIs",
+    description: "ERP integration, automated routines, reconciliations, performance dashboards, and compliance indicators. Technology that reduces errors and increases precision.",
+    href: "/services#automation"
   },
   {
-    icon: Briefcase,
-    title: "Administrative Services",
-    description: "Complete administrative support including registered agent services, annual reports, and compliance management.",
-    href: "/services#administrative"
-  },
-  {
-    icon: Globe,
-    title: "Financial Management",
-    description: "Comprehensive financial management solutions to help your business grow and thrive in the American market.",
-    href: "/services#financial"
+    icon: Users,
+    title: "Training & Ongoing Support",
+    description: "Team training, technical manuals, quarterly reviews, and continuous preventive audits. We ensure your company maintains standards long-term.",
+    href: "/services#training"
   }
 ];
 
 const differentials = [
   {
-    icon: Users,
-    title: "Brazilian Entrepreneur Specialists",
-    description: "We understand the unique challenges Brazilians face when starting a business in the USA."
+    icon: Shield,
+    title: "Not Basic Accounting",
+    description: "We don't do daily entries, payroll, or simple annual filings. We fix the system so your accountant can work without generating errors."
   },
   {
     icon: Award,
-    title: "Consultative & Educational Approach",
-    description: "We don't just do the work - we educate you about US business practices and regulations."
+    title: "Valtax Methodology",
+    description: "Our proprietary methodology implements complete Accounting Governance + Tax Compliance + Automation within each SMB."
   },
   {
-    icon: Shield,
-    title: "Real IRS Compliance",
-    description: "Full compliance with IRS regulations to protect your business and personal interests."
+    icon: CheckCircle2,
+    title: "Preventive Audits",
+    description: "We identify problems before the IRS does, avoiding risks, penalties, and inconsistencies that hinder loans and growth."
   },
   {
     icon: Globe,
-    title: "Brazil + USA Experience",
-    description: "Combined expertise from both countries to bridge the gap in international business."
+    title: "High-Value Consulting",
+    description: "Strategic, consultative service focused on reorganization and continuous improvement — not simple operational execution."
   }
 ];
 
 const stats = [
+  { value: "$696B", label: "US Tax Gap" },
   { value: "100%", label: "IRS Compliance" },
-  { value: "24/7", label: "Support Available" },
-  { value: "FL", label: "Based in Florida" },
+  { value: "SMBs", label: "Our Focus" },
   { value: "EN/PT", label: "Bilingual Service" }
 ];
 
@@ -115,28 +98,28 @@ export default function Home() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--gold)]"></span>
                 </span>
                 <span className="text-[var(--primary-blue)] font-medium text-sm tracking-wide uppercase">
-                  Florida, USA — Serving Entrepreneurs Worldwide
+                  Advanced Technical Consulting for US SMBs
                 </span>
               </div>
               
               {/* Main Headline */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 text-[var(--primary-blue)]">
-                Build Your
+                Strategic
                 <span className="block mt-2">
                   <span className="relative inline-block">
-                    American
+                    Accounting
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                       <path d="M2 10C50 4 150 4 198 10" stroke="var(--gold)" strokeWidth="4" strokeLinecap="round"/>
                     </svg>
                   </span>
-                  {" "}Dream
+                  {" "}Not Operational
                 </span>
               </h1>
               
               {/* Subheadline */}
               <p className="text-xl sm:text-2xl text-[var(--text-gray)] mb-10 leading-relaxed max-w-xl">
-                Expert accounting, tax, and business formation services. 
-                <span className="text-[var(--primary-blue)] font-semibold"> Start your US company with confidence</span> — fully compliant, zero tax risks.
+                We help US small and medium businesses operate with organization, security, and compliance.
+                <span className="text-[var(--primary-blue)] font-semibold"> Governance, automation, and real tax compliance</span> — fewer errors, fewer penalties, reliable data.
               </p>
               
               {/* CTA Buttons */}
@@ -191,47 +174,26 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Right Side - Feature Cards */}
+            {/* Right Side - Valdenice Photo */}
             <div className="lg:col-span-5 animate-fade-in animation-delay-200">
               <div className="relative">
-                {/* Decorative element */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-[var(--gold)] rounded-2xl opacity-20 rotate-12" />
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[var(--primary-blue)] rounded-full opacity-10" />
+                {/* Decorative elements */}
+                <div className="absolute -top-8 -right-8 w-72 h-72 bg-[var(--gold)]/20 rounded-full blur-3xl" />
+                <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-[var(--primary-blue)]/10 rounded-full blur-2xl" />
                 
-                {/* Main Card */}
-                <div className="relative bg-white rounded-3xl shadow-2xl shadow-gray-200/50 p-8 border border-gray-100">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary-blue)] to-[var(--primary-blue-light)] rounded-2xl flex items-center justify-center shadow-lg shadow-[var(--primary-blue)]/20">
-                      <Building2 className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-[var(--primary-blue)] text-lg">VMARTELOZO</h3>
-                      <p className="text-[var(--gold)] text-sm font-medium">Global Accounting LLC</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4 mb-6">
-                    {[
-                      { icon: Building2, text: "LLC & Corp Formation" },
-                      { icon: Calculator, text: "Accounting & Bookkeeping" },
-                      { icon: FileText, text: "Tax Preparation & Filing" },
-                      { icon: TrendingUp, text: "Strategic Tax Planning" }
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-center gap-3 p-3 bg-[var(--beige)] rounded-xl hover:bg-[var(--beige-dark)] transition-colors cursor-pointer group">
-                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:shadow transition-shadow">
-                          <item.icon className="w-5 h-5 text-[var(--gold)]" />
-                        </div>
-                        <span className="font-medium text-[var(--primary-blue)]">{item.text}</span>
-                        <ArrowRight className="w-4 h-4 text-[var(--gold)] ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className="bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-blue-light)] rounded-2xl p-5 text-white">
-                    <p className="text-sm opacity-90 mb-1">Our Promise</p>
-                    <p className="font-semibold text-lg leading-snug">
-                      Entrepreneurship in the USA — safely and without tax risks.
-                    </p>
+                {/* Photo */}
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+                  <Image 
+                    src="/root/hero.webp"
+                    alt="Valdenice Martelozo"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  {/* Subtle gradient overlay at bottom for text readability */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-6 pt-20">
+                    <h3 className="font-bold text-white text-2xl drop-shadow-lg">Valdenice Martelozo</h3>
+                    <p className="text-[var(--gold)] font-medium drop-shadow-md">Founder & Lead Consultant</p>
                   </div>
                 </div>
               </div>
@@ -246,11 +208,11 @@ export default function Home() {
           <div className="text-center mb-16">
             <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Our Services</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-4">
-              Complete Business Solutions
+              The 3 Pillars of Our Methodology
             </h2>
             <p className="text-[var(--text-gray)] max-w-2xl mx-auto text-lg">
-              From company formation to ongoing financial management, we provide 
-              everything you need to succeed in the American market.
+              While regular firms do basic accounting, we operate at a higher level: 
+              structuring processes, creating controls, fixing failures, and implementing real fiscal governance.
             </p>
           </div>
           
@@ -279,6 +241,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Meet Valdenice Section */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Photo Side */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-[var(--gold)]/10 rounded-3xl" />
+              {/* Photo Placeholder - Replace with actual photo */}
+              <div className="relative aspect-[4/5] bg-gradient-to-br from-[var(--beige)] to-[var(--beige-dark)] rounded-2xl overflow-hidden flex items-center justify-center">
+                {/* Replace this div with an actual Image component when you have the photo */}
+                <Image 
+                    src="/root/val-1.webp"
+                    alt="Valdenice Martelozo"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+              </div>
+            </div>
+            
+            {/* Content Side */}
+            <div>
+              <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Meet Valdenice</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-6">
+                Not a Traditional Accountant
+              </h2>
+              <p className="text-[var(--text-gray)] text-lg mb-6 leading-relaxed">
+                Valdenice doesn&apos;t offer basic services like daily entries, payroll, or simple annual filings. 
+                Her work is <strong>advanced technical consulting</strong> to organize, correct, and structure 
+                US small and medium businesses living in accounting chaos.
+              </p>
+              <p className="text-[var(--text-gray)] text-lg mb-8 leading-relaxed">
+                The same chaos that the IRS and GAO point to as the direct cause of the 
+                <strong> $696 billion Tax Gap</strong>. Her central proposal is to implement, within each SMB, 
+                a complete system of Accounting Governance + Tax Compliance + Automation, based on her 
+                proprietary <strong>Valtax Accounting</strong> methodology.
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  "Structures accounting processes",
+                  "Creates internal controls",
+                  "Corrects ERP failures",
+                  "Automates critical routines",
+                  "Implements audit trails",
+                  "Trains internal teams"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-[var(--gold)] flex-shrink-0" />
+                    <span className="text-[var(--text-gray)]">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 text-[var(--gold)] font-semibold hover:text-[var(--gold-dark)] transition-colors"
+              >
+                Learn more about Valdenice <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-20 lg:py-28 bg-[var(--beige)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -286,12 +313,12 @@ export default function Home() {
             <div>
               <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-6">
-                Your Trusted Partner for US Business Success
+                We Don&apos;t Do Your Accountant&apos;s Job — We Fix the Company
               </h2>
               <p className="text-[var(--text-gray)] text-lg mb-8 leading-relaxed">
-                VMARTELOZO Global Accounting LLC specializes in accounting, tax, and 
-                administrative services in the United States. We understand the unique 
-                challenges faced by entrepreneurs looking to expand into the American market.
+                Valdenice is not a traditional accountant. She provides advanced technical consulting 
+                to organize, correct, and structure US SMBs living in accounting chaos — the same chaos 
+                the IRS and GAO point to as the direct cause of the $696 billion Tax Gap.
               </p>
               
               <div className="space-y-4">
@@ -313,15 +340,14 @@ export default function Home() {
               <div className="absolute -inset-4 bg-[var(--gold)]/10 rounded-3xl" />
               <div className="relative bg-white rounded-2xl p-8 shadow-xl">
                 <h3 className="text-2xl font-bold text-[var(--primary-blue)] mb-6">
-                  Our Core Message
+                  The Results You Get
                 </h3>
                 <blockquote className="text-xl text-[var(--text-gray)] italic border-l-4 border-[var(--gold)] pl-6 mb-6">
-                  &ldquo;Entrepreneurship in the USA safely and without tax risks.&rdquo;
+                  &ldquo;Fewer errors, fewer penalties, reliable data, higher productivity, better cash flow, real preparation for growth.&rdquo;
                 </blockquote>
                 <p className="text-[var(--text-gray)] mb-6">
-                  We help you navigate the complexities of US business regulations, 
-                  ensuring your venture is built on a solid foundation of compliance 
-                  and best practices.
+                  We restructure your business, correct errors, create processes, implement internal controls, 
+                  make technology work, and train your team to maintain everything in order.
                 </p>
                 <Link
                   href="/about"
@@ -341,19 +367,19 @@ export default function Home() {
           <div className="text-center mb-16">
             <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">How It Works</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-4">
-              Simple Steps to Get Started
+              Our Consulting Process
             </h2>
             <p className="text-[var(--text-gray)] max-w-2xl mx-auto text-lg">
-              Our streamlined process makes it easy to start your US business journey.
+              A structured approach to transform your accounting chaos into organized, compliant operations.
             </p>
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Initial Contact", description: "Reach out via website, WhatsApp, email, or Instagram" },
-              { step: "02", title: "Consultation", description: "We discuss your needs: taxes, bookkeeping, company registration" },
-              { step: "03", title: "Custom Plan", description: "Receive a tailored solution for your business goals" },
-              { step: "04", title: "Implementation", description: "We handle everything while keeping you informed" }
+              { step: "01", title: "Diagnostic", description: "We assess your current accounting maturity and identify critical gaps" },
+              { step: "02", title: "Risk Analysis", description: "We map compliance risks, process failures, and system issues" },
+              { step: "03", title: "Implementation", description: "We restructure processes, fix ERPs, and create internal controls" },
+              { step: "04", title: "Training & Support", description: "We train your team and provide ongoing preventive audits" }
             ].map((item, index) => (
               <div key={index} className="relative text-center">
                 <div className="w-16 h-16 bg-[var(--gold)] rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">
@@ -377,11 +403,11 @@ export default function Home() {
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Start Your US Business?
+            Ready to Fix Your Accounting Chaos?
           </h2>
           <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-            Schedule a free consultation today and discover how we can help you 
-            achieve your entrepreneurial goals in the United States.
+            Schedule a free consultation to discover how we can help you 
+            achieve real compliance, reduce errors, and prepare your business for growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

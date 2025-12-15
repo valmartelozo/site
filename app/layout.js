@@ -14,12 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "VMARTELOZO Global Accounting LLC | US Business Formation & Tax Services",
-  description: "Specialized accounting, tax, and administrative services in the United States. Expert guidance for Brazilians starting businesses in the USA. IRS compliance, LLC formation, and financial management.",
-  keywords: "US accounting, LLC formation, tax services, Brazilian entrepreneurs, IRS compliance, Florida accounting, business formation USA",
+  title: "VMARTELOZO Global Accounting LLC | Accounting Governance + Tax Compliance + Automation",
+  description: "Advanced technical consulting for US SMBs: Accounting Governance, Tax Compliance, Automation, and Team Training using the Valtax Accounting Methodology.",
+  keywords: "accounting governance, tax compliance, accounting automation, ERP optimization, internal controls, preventive audits, US SMB accounting consulting",
+  icons: {
+    icon: "/root/logo-val.png",
+    apple: "/root/logo-val.png",
+  },
   openGraph: {
     title: "VMARTELOZO Global Accounting LLC",
-    description: "Entrepreneurship in the USA safely and without tax risks. Specialized services for Brazilians doing business in America.",
+    description: "Advanced technical consulting for US SMBs: Accounting Governance, Tax Compliance, Automation, and Team Training using the Valtax Accounting Methodology.",
     type: "website",
     locale: "en_US",
   },

@@ -16,70 +16,70 @@ import {
 
 export const metadata = {
   title: "About Us | VMARTELOZO Global Accounting LLC",
-  description: "Learn about VMARTELOZO Global Accounting LLC - specialized accounting, tax, and administrative services in the United States for Brazilian entrepreneurs.",
+  description: "Learn about Valdenice and the Valtax Methodology - advanced technical consulting for US SMBs focused on Accounting Governance, Tax Compliance, and Automation.",
 };
 
 const values = [
   {
     icon: Shield,
-    title: "Integrity",
-    description: "We operate with complete transparency and honesty in all our dealings, ensuring your business is built on a foundation of trust."
+    title: "Real Compliance",
+    description: "We don&apos;t just file paperwork. We implement systems that ensure ongoing IRS/GAAP/IFRS compliance and prevent future issues."
   },
   {
     icon: Award,
-    title: "Excellence",
-    description: "We strive for excellence in every service we provide, maintaining the highest standards of professional quality."
+    title: "Technical Excellence",
+    description: "Our Valtax Methodology is built on deep technical expertise in accounting governance, process automation, and fiscal compliance."
   },
   {
     icon: Heart,
-    title: "Client Focus",
-    description: "Your success is our success. We are dedicated to understanding and meeting your unique business needs."
+    title: "Continuous Improvement",
+    description: "We don&apos;t just fix problems once. We establish systems for ongoing monitoring, preventive audits, and continuous optimization."
   },
   {
     icon: BookOpen,
-    title: "Education",
-    description: "We believe in empowering our clients with knowledge about US business practices and regulations."
+    title: "Knowledge Transfer",
+    description: "We train your team to maintain standards independently, ensuring lasting results long after our engagement ends."
   }
 ];
 
 const differentials = [
   {
     icon: Users,
-    title: "Brazilian Entrepreneur Specialists",
-    description: "We understand the unique challenges and opportunities that Brazilians face when starting a business in the USA. Our team bridges the cultural and regulatory gap."
+    title: "Not a Traditional Accountant",
+    description: "Valdenice doesn&apos;t do daily entries, payroll, or simple annual filings. She provides advanced technical consulting to fix the accounting chaos that causes the $696B Tax Gap."
   },
   {
     icon: BookOpen,
-    title: "Consultative & Educational Approach",
-    description: "We don&apos;t just handle your accounting - we educate you about US business practices, tax regulations, and compliance requirements so you can make informed decisions."
+    title: "Valtax Methodology",
+    description: "Our proprietary methodology implements complete Accounting Governance + Tax Compliance + Automation within each SMB. It&apos;s a system for reorganization and continuous improvement."
   },
   {
     icon: Scale,
-    title: "Real IRS Compliance",
-    description: "We ensure full compliance with IRS regulations, protecting your business from penalties, fines, and potential legal issues that could affect your immigration status."
+    title: "Preventive Approach",
+    description: "We identify problems before the IRS does. Our preventive audits avoid risks, penalties, and inconsistencies that hinder loans, compliance, and business growth."
   },
   {
     icon: Globe,
-    title: "Brazil + USA Experience",
-    description: "Our combined expertise from both countries allows us to provide comprehensive guidance that considers your complete financial picture across borders."
+    title: "High-Value Consulting",
+    description: "This is strategic, consultative work focused on restructuring and improvement — not simple operational execution. We fix the company so your accountant can work without errors."
   }
 ];
 
 const timeline = [
   {
-    year: "Foundation",
-    title: "VMARTELOZO Global Accounting LLC",
-    description: "Established to serve Brazilian entrepreneurs seeking to do business in the United States."
+    year: "The Problem",
+    title: "$696 Billion Tax Gap",
+    description: "The IRS and GAO identify accounting chaos in SMBs as a direct cause of massive tax compliance failures across the US."
   },
   {
-    year: "Mission",
-    title: "Empowering Entrepreneurs",
-    description: "Dedicated to helping clients navigate US business regulations with confidence and compliance."
+    year: "Our Solution",
+    title: "Valtax Methodology",
+    description: "A complete system of Accounting Governance + Tax Compliance + Automation designed specifically for small and medium businesses."
   },
   {
-    year: "Vision",
-    title: "Trusted Partner",
-    description: "To be the go-to resource for Brazilians starting and growing businesses in America."
+    year: "The Result",
+    title: "Organized, Compliant Operations",
+    description: "Fewer errors, fewer penalties, reliable data, higher productivity, better cash flow, and real preparation for growth."
   }
 ];
 
@@ -93,12 +93,13 @@ export default function AboutPage() {
             <div>
               <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h1 className="text-4xl sm:text-5xl font-bold mt-2 mb-6">
-                Your Partner for US Business Success
+                Strategic Accounting, Not Operational
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed mb-8">
-                VMARTELOZO Global Accounting LLC is a company specialized in accounting, 
-                tax, and administrative services in the United States. We are dedicated 
-                to helping entrepreneurs achieve their American dream safely and compliantly.
+                VMARTELOZO Global Accounting LLC helps US small and medium businesses operate with 
+                organization, security, and compliance. While regular firms do basic accounting, 
+                we operate at a higher level: structuring processes, creating controls, fixing failures, 
+                and implementing real fiscal governance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -134,18 +135,17 @@ export default function AboutPage() {
             <div>
               <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Our Mission</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-6">
-                Entrepreneurship in the USA Safely and Without Tax Risks
+                Fixing the Chaos That Causes the Tax Gap
               </h2>
               <p className="text-[var(--text-gray)] text-lg mb-6 leading-relaxed">
-                Our mission is to empower entrepreneurs to start and grow their businesses 
-                in the United States with confidence. We eliminate the fear of making fiscal 
-                errors that could result in fines, company blocks, banking problems, or 
-                affect immigration status.
+                The IRS and GAO point to accounting chaos in SMBs as a direct cause of the 
+                $696 billion Tax Gap. Our mission is to implement complete Accounting Governance + 
+                Tax Compliance + Automation within each business we serve.
               </p>
               <p className="text-[var(--text-gray)] text-lg leading-relaxed">
-                We provide comprehensive support that goes beyond traditional accounting 
-                services, offering education, guidance, and strategic advice to help you 
-                navigate the complexities of the American business landscape.
+                We don&apos;t do the accountant&apos;s job — we fix the company so the accountant can 
+                work without generating errors. This is high-value consulting focused on 
+                reorganization and continuous improvement, not simple operational execution.
               </p>
             </div>
             
@@ -178,11 +178,11 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">What Sets Us Apart</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-4">
-              Our Competitive Advantages
+              Why We&apos;re Different
             </h2>
             <p className="text-[var(--text-gray)] max-w-2xl mx-auto text-lg">
-              We combine expertise, education, and dedication to provide unmatched 
-              service to Brazilian entrepreneurs in the USA.
+              We&apos;re not a routine accounting firm. We provide advanced technical consulting 
+              that transforms how your business handles accounting and compliance.
             </p>
           </div>
           
@@ -234,18 +234,18 @@ export default function AboutPage() {
             <div>
               <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">The Problem We Solve</span>
               <h2 className="text-3xl sm:text-4xl font-bold mt-2 mb-6">
-                Eliminating Fear and Uncertainty
+                The Accounting Chaos in US SMBs
               </h2>
               <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-                Many entrepreneurs fear making fiscal errors that could lead to serious consequences:
+                Most small and medium businesses operate with serious accounting deficiencies:
               </p>
               <ul className="space-y-4">
                 {[
-                  "Fines and penalties from the IRS",
-                  "Company blocks and operational issues",
-                  "Banking problems and account closures",
-                  "Immigration status complications",
-                  "Legal issues and compliance failures"
+                  "Inconsistent or missing internal controls",
+                  "ERP systems incorrectly configured",
+                  "No standardized processes or documentation",
+                  "Unreliable financial statements",
+                  "High risk of IRS penalties and audits"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[var(--gold)] flex-shrink-0" />
@@ -256,16 +256,16 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold mb-6">Our Solution</h3>
+              <h3 className="text-2xl font-bold mb-6">The Valtax Solution</h3>
               <p className="text-gray-200 mb-6 leading-relaxed">
-                We provide comprehensive accounting, tax, and administrative services 
-                that ensure full compliance with US regulations. Our consultative 
-                approach means you&apos;re never in the dark about your business obligations.
+                We implement complete Accounting Governance + Tax Compliance + Automation. 
+                We restructure processes, create internal controls, fix ERP configurations, 
+                and establish audit trails.
               </p>
               <p className="text-gray-200 mb-8 leading-relaxed">
-                With our expertise in both Brazilian and American business practices, 
-                we bridge the gap and give you the confidence to grow your business 
-                without fear.
+                The result: fewer errors, fewer penalties, reliable data, higher productivity, 
+                better cash flow, and real preparation for growth. We train your team to 
+                maintain these standards long-term.
               </p>
               <Link
                 href="/contact"

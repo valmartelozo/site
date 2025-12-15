@@ -29,12 +29,12 @@ const contactSchema = z.object({
 });
 
 const services = [
-  { value: 'company-formation', label: 'Company Formation (LLC/Corp)' },
-  { value: 'accounting', label: 'Accounting & Bookkeeping' },
-  { value: 'tax-services', label: 'Tax Services' },
-  { value: 'tax-consulting', label: 'Tax Consulting' },
-  { value: 'administrative', label: 'Administrative Services' },
-  { value: 'financial', label: 'Financial Management' },
+  { value: 'governance', label: 'Accounting Governance & Tax Compliance' },
+  { value: 'automation', label: 'Automation, Systems & KPIs' },
+  { value: 'training', label: 'Training & Ongoing Support' },
+  { value: 'diagnostic', label: 'Maturity Diagnostic' },
+  { value: 'erp-fix', label: 'ERP Correction & Integration' },
+  { value: 'audit', label: 'Preventive Audit' },
   { value: 'other', label: 'Other / General Inquiry' },
 ];
 
@@ -115,12 +115,12 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Contact Us</span>
             <h1 className="text-4xl sm:text-5xl font-bold mt-2 mb-6">
-              Let&apos;s Start Your US Business Journey
+              Let&apos;s Fix Your Accounting Chaos
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
-              Ready to take the next step? Contact us for a free consultation and 
-              discover how we can help you achieve your entrepreneurial goals in 
-              the United States.
+              Ready to implement real Accounting Governance, Tax Compliance, and Automation? 
+              Contact us for a free consultation and discover how the Valtax Methodology 
+              can transform your business operations.
             </p>
           </div>
         </div>

@@ -1,12 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, MessageCircle, Linkedin, Instagram } from 'lucide-react';
 
 const services = [
-  { name: 'Company Formation', href: '/services#company-formation' },
-  { name: 'Accounting & Bookkeeping', href: '/services#accounting' },
-  { name: 'Tax Services', href: '/services#tax' },
-  { name: 'Tax Consulting', href: '/services#consulting' },
-  { name: 'Financial Management', href: '/services#financial' },
+  { name: 'Accounting Governance', href: '/services#governance' },
+  { name: 'Tax Compliance', href: '/services#governance' },
+  { name: 'Automation & Systems', href: '/services#automation' },
+  { name: 'KPIs & Dashboards', href: '/services#automation' },
+  { name: 'Training & Support', href: '/services#training' },
 ];
 
 const quickLinks = [
@@ -26,12 +27,17 @@ export default function Footer() {
           {/* Company info */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold">VMARTELOZO</h3>
-              <p className="text-[var(--gold)] font-medium">Global Accounting LLC</p>
+              <Image
+                src="/root/logo-branca.png"
+                alt="VMARTELOZO Global Accounting LLC"
+                width={220}
+                height={60}
+                className="h-20 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Specialized accounting, tax, and administrative services in the United States. 
-              Your trusted partner for doing business safely in the USA.
+              Advanced technical consulting for US SMBs. Accounting Governance, Tax Compliance, 
+              and Automation using the Valtax Methodology.
             </p>
             <div className="flex gap-4">
               <a 
@@ -143,7 +149,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>&copy; {new Date().getFullYear()} VMARTELOZO Global Accounting LLC. All rights reserved.</p>
             <p className="text-center">
-              Entrepreneurship in the USA safely and without tax risks.
+              Strategic accounting, not operational. Fixing the chaos that causes the Tax Gap.
             </p>
           </div>
         </div>

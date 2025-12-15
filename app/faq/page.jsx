@@ -15,79 +15,83 @@ import {
 
 const faqCategories = [
   {
-    id: 'company',
+    id: 'governance',
     icon: Building2,
-    title: 'Company Formation',
+    title: 'Accounting Governance',
     questions: [
       {
-        question: "Can I open a company in the USA even if I live in Brazil?",
-        answer: "Yes, absolutely! You can open an LLC or Corporation in the United States even while residing in Brazil. You don't need to be a US citizen or resident to form a company. We handle the entire process remotely, including EIN registration, state filing, and all necessary documentation."
+        question: "What is Accounting Governance and why do I need it?",
+        answer: "Accounting Governance is a comprehensive framework of processes, controls, and standards that ensure your financial operations are accurate, compliant, and efficient. Without it, SMBs often operate in chaos — the same chaos the IRS and GAO identify as a direct cause of the $696 billion Tax Gap. We implement governance to prevent errors, penalties, and audit risks."
       },
       {
-        question: "What is the best state to open a company in the USA?",
-        answer: "The best state depends on your specific business needs. Delaware is popular for its business-friendly laws and privacy protections. Wyoming offers low fees and no state income tax. Florida is excellent for those planning to establish a physical presence. We analyze your situation and recommend the optimal state for your business goals."
+        question: "What does a maturity diagnostic involve?",
+        answer: "Our maturity diagnostic assesses your current accounting processes, internal controls, ERP configuration, documentation standards, and compliance status. We identify gaps, risks, and areas for improvement. This diagnostic forms the foundation for our restructuring recommendations."
       },
       {
-        question: "What is an LLC and why is it popular?",
-        answer: "An LLC (Limited Liability Company) is a business structure that provides personal liability protection while offering flexibility in management and taxation. It's popular because it combines the liability protection of a corporation with the tax benefits and simplicity of a partnership. Most foreign entrepreneurs choose LLCs for their US ventures."
+        question: "How do you create internal controls?",
+        answer: "We design and implement controls tailored to your business: segregation of duties, approval workflows, reconciliation procedures, audit trails, and documentation standards. These controls prevent errors, detect issues early, and ensure your financial data is reliable."
       },
       {
-        question: "How long does it take to form a company in the USA?",
-        answer: "The timeline varies by state, but typically ranges from 1-4 weeks. Some states offer expedited processing for an additional fee. Once your company is formed, we help you obtain your EIN (usually within 1-2 weeks for foreign owners) and set up your business banking."
+        question: "What standards do you follow (GAAP, IFRS, IRS)?",
+        answer: "We ensure compliance with US GAAP (Generally Accepted Accounting Principles), IRS requirements, and where applicable, IFRS (International Financial Reporting Standards). Our goal is to make your financial statements reliable and your tax filings bulletproof."
       },
       {
-        question: "Do I need a US address to open a company?",
-        answer: "Yes, you need a registered agent with a physical address in the state where you form your company. We provide registered agent services, giving you a legitimate US business address for official correspondence and legal documents."
+        question: "How long does a governance implementation take?",
+        answer: "Timeline depends on your company's size and current state. A typical engagement ranges from 2-6 months for initial implementation, followed by ongoing support. We work in phases: diagnostic, risk analysis, implementation, and training."
       }
     ]
   },
   {
-    id: 'tax',
+    id: 'automation',
     icon: FileText,
-    title: 'Tax Questions',
+    title: 'Automation & Systems',
     questions: [
       {
-        question: "Do I need to pay taxes in the USA if I open an LLC?",
-        answer: "It depends on your situation. Single-member LLCs owned by non-residents are typically treated as 'disregarded entities' for US tax purposes if they don't have US-source income. However, you may still have filing requirements. Multi-member LLCs are treated as partnerships and have different obligations. We analyze your specific situation to ensure proper compliance."
+        question: "Which ERP systems do you work with?",
+        answer: "We work with QuickBooks, SAP Business One, NetSuite, and other major accounting platforms. We don't just set them up — we correct parameterizations, integrate systems, and create automations that reduce manual work and errors."
       },
       {
-        question: "What is an EIN and why do I need one?",
-        answer: "An EIN (Employer Identification Number) is like a Social Security Number for your business. It's required for opening business bank accounts, filing taxes, and hiring employees. All US companies need an EIN, and we handle the application process for you."
+        question: "What kind of automations do you implement?",
+        answer: "We automate reconciliations, routine journal entries, report generation, compliance checks, and data validation. The goal is to reduce rework, eliminate manual errors, and give you real-time visibility into your financial performance."
       },
       {
-        question: "What tax forms does my LLC need to file?",
-        answer: "The required forms depend on your LLC structure and activities. Common forms include Form 5472 (for foreign-owned LLCs), Form 1120 (corporate tax return), Form 1065 (partnership return), and various state filings. We prepare and file all necessary returns to keep you compliant."
+        question: "What are compliance KPIs and why do they matter?",
+        answer: "Compliance KPIs are measurable indicators that track your adherence to accounting standards and tax requirements. Examples include reconciliation completion rates, error rates, filing deadlines met, and audit trail completeness. These KPIs help you monitor and maintain compliance proactively."
       },
       {
-        question: "Can I avoid double taxation between Brazil and the USA?",
-        answer: "While Brazil and the USA don't have a comprehensive tax treaty, there are strategies to minimize double taxation. Proper entity structuring, understanding tax credits, and strategic planning can help optimize your tax situation across both countries. We work with you to develop a tax-efficient structure."
+        question: "Can you fix our existing ERP that's not working correctly?",
+        answer: "Yes, this is a core part of what we do. Many SMBs have ERPs that were set up incorrectly or have drifted from proper configuration over time. We audit your current setup, identify issues, and correct parameterizations to ensure accurate data."
       },
       {
-        question: "What happens if I don't file my US taxes?",
-        answer: "Failure to file required tax returns can result in significant penalties, interest charges, and potential legal issues. For foreign-owned LLCs, the penalty for not filing Form 5472 can be $25,000 per form. We ensure you meet all filing deadlines and requirements to avoid these costly penalties."
+        question: "What dashboards do you provide?",
+        answer: "We create performance dashboards that show key financial metrics, compliance indicators, reconciliation status, and trend analysis. These dashboards give you real-time visibility into your business health and compliance status."
       }
     ]
   },
   {
-    id: 'financial',
+    id: 'training',
     icon: DollarSign,
-    title: 'Financial & Banking',
+    title: 'Training & Support',
     questions: [
       {
-        question: "Can I open a US bank account for my company?",
-        answer: "Yes, but it can be challenging for non-residents. Many banks require an in-person visit, though some offer remote account opening. We guide you through the process, recommend banks that work with foreign entrepreneurs, and help prepare all necessary documentation."
+        question: "Do you replace our existing accountant?",
+        answer: "No. We don't do the accountant's job — we fix the company so your accountant can work without generating errors. We restructure processes, create controls, and train your team. Your accountant then operates within a properly governed system."
       },
       {
-        question: "Do I need to keep separate books for my US company?",
-        answer: "Yes, maintaining separate financial records for your US company is essential for legal protection, tax compliance, and good business practice. We provide professional bookkeeping services to keep your records accurate and organized."
+        question: "What does team training include?",
+        answer: "We provide comprehensive training on new processes, internal controls, ERP usage, documentation standards, and compliance requirements. We create technical manuals and conduct knowledge transfer sessions to ensure your team can maintain standards independently."
       },
       {
-        question: "What accounting software do you recommend?",
-        answer: "We typically recommend QuickBooks Online for its ease of use, robust features, and integration capabilities. However, we can work with various accounting platforms based on your preferences and business needs."
+        question: "What are preventive audits?",
+        answer: "Preventive audits are regular reviews we conduct to identify problems before the IRS does. We check compliance status, control effectiveness, reconciliation accuracy, and documentation completeness. This proactive approach avoids penalties and surprises."
       },
       {
-        question: "How often should I reconcile my accounts?",
-        answer: "We recommend monthly reconciliation to maintain accurate records and catch any discrepancies early. Our bookkeeping services include regular reconciliation to ensure your financial data is always current and accurate."
+        question: "How often do you conduct quarterly reviews?",
+        answer: "As the name suggests, quarterly reviews happen every three months. We assess compliance status, review KPIs, identify emerging issues, and recommend improvements. This ongoing support ensures your governance framework stays effective."
+      },
+      {
+        question: "What ongoing support do you provide after implementation?",
+        answer: "After initial implementation, we provide quarterly reviews, preventive audits, technical support, process improvement recommendations, and team coaching. We're your ongoing partner in maintaining accounting excellence."
       }
     ]
   },
@@ -97,24 +101,24 @@ const faqCategories = [
     title: 'General Questions',
     questions: [
       {
+        question: "What is the Valtax Methodology?",
+        answer: "The Valtax Methodology is our proprietary approach to implementing complete Accounting Governance + Tax Compliance + Automation within SMBs. It's a systematic framework for reorganization and continuous improvement — not simple operational execution."
+      },
+      {
+        question: "Do you do basic bookkeeping, payroll, or tax filing?",
+        answer: "No. We don't do daily entries, payroll, operational bookkeeping, or simple annual filings. We organize the entire system so all of that happens correctly. We're advanced technical consultants, not routine accountants."
+      },
+      {
+        question: "What results can I expect?",
+        answer: "Our clients achieve: fewer errors, fewer penalties, reliable financial data, higher productivity, better cash flow, and real preparation for growth. We transform accounting chaos into organized, compliant operations."
+      },
+      {
+        question: "How do I know if I need your services?",
+        answer: "If you're experiencing: unreliable financial statements, IRS concerns, ERP issues, lack of internal controls, process inconsistencies, or difficulty getting loans due to data quality — you likely need our help. Schedule a free consultation to discuss."
+      },
+      {
         question: "Do you offer services in Portuguese?",
-        answer: "Yes! We are fully bilingual and provide all our services in both English and Portuguese. We understand the importance of clear communication, especially when dealing with complex financial and legal matters."
-      },
-      {
-        question: "How do I get started with your services?",
-        answer: "Simply contact us through our website, WhatsApp, or email. We'll schedule a free consultation to understand your needs and goals. From there, we'll provide a customized proposal and guide you through every step of the process."
-      },
-      {
-        question: "What makes you different from other accounting firms?",
-        answer: "We specialize in serving Brazilian entrepreneurs in the USA, combining expertise from both countries. Our consultative and educational approach means we don't just do the work - we help you understand US business practices. We focus on real IRS compliance to protect your business and personal interests."
-      },
-      {
-        question: "Can you help if I already have a company with compliance issues?",
-        answer: "Absolutely. We can help you get back on track with delinquent filings, resolve compliance issues, and establish proper systems going forward. The sooner you address these issues, the better - contact us for a confidential consultation."
-      },
-      {
-        question: "Do you offer ongoing support or just one-time services?",
-        answer: "We offer both! While some clients need help with specific projects like company formation, most benefit from ongoing support including monthly bookkeeping, annual tax preparation, and year-round compliance management. We tailor our services to your needs."
+        answer: "Yes! We are fully bilingual and provide all our services in both English and Portuguese. We understand the importance of clear communication, especially when dealing with complex technical and compliance matters."
       }
     ]
   }
@@ -142,7 +146,7 @@ function FAQItem({ question, answer, isOpen, onClick }) {
 }
 
 export default function FAQPage() {
-  const [activeCategory, setActiveCategory] = useState('company');
+  const [activeCategory, setActiveCategory] = useState('governance');
   const [openQuestions, setOpenQuestions] = useState({});
 
   const toggleQuestion = (categoryId, questionIndex) => {
@@ -169,8 +173,8 @@ export default function FAQPage() {
               Got Questions? We Have Answers
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
-              Find answers to common questions about starting and running a business 
-              in the United States. Can&apos;t find what you&apos;re looking for? Contact us directly.
+              Find answers to common questions about Accounting Governance, Tax Compliance, 
+              Automation, and our Valtax Methodology. Can&apos;t find what you&apos;re looking for? Contact us directly.
             </p>
           </div>
         </div>
@@ -250,11 +254,11 @@ export default function FAQPage() {
       <section className="py-20 lg:py-28 bg-[var(--beige)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mb-6">
-            Ready to Get Started?
+            Ready to Fix Your Accounting Chaos?
           </h2>
           <p className="text-xl text-[var(--text-gray)] mb-10 max-w-2xl mx-auto">
-            Schedule a free consultation to discuss your specific situation and 
-            get personalized guidance for your US business journey.
+            Schedule a free consultation to discuss how we can implement real 
+            Accounting Governance, Tax Compliance, and Automation in your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
