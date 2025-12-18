@@ -2,12 +2,12 @@
 
 :root {
   /* Brand Colors - Blue, White, Beige, Gold */
-  --primary-blue: #1e3a5f;
-  --primary-blue-light: #2d5a8a;
-  --primary-blue-dark: #152a45;
-  --gold: #c9a227;
-  --gold-light: #d4b84a;
-  --gold-dark: #a88a1f;
+  --primary-blue: #062739;
+  --primary-blue-light: #0a3d52;
+  --primary-blue-dark: #041c28;
+  --gold: #d4b446;
+  --gold-light: #e0c56a;
+  --gold-dark: #b89c3a;
   --beige: #f5f0e8;
   --beige-dark: #e8e0d0;
   --white: #ffffff;

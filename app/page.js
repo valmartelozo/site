@@ -174,7 +174,7 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Right Side - Valdenice Photo */}
+            {/* Right Side - Valdelice Photo */}
             <div className="lg:col-span-5 animate-fade-in animation-delay-200">
               <div className="relative">
                 {/* Decorative elements */}
@@ -185,14 +185,14 @@ export default function Home() {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                   <Image 
                     src="/root/hero.webp"
-                    alt="Valdenice Martelozo"
+                    alt="Valdelice Martelozo"
                     fill
                     className="object-cover object-top"
                     priority
                   />
                   {/* Subtle gradient overlay at bottom for text readability */}
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-6 pt-20">
-                    <h3 className="font-bold text-white text-2xl drop-shadow-lg">Valdenice Martelozo</h3>
+                    <h3 className="font-bold text-white text-2xl drop-shadow-lg">Valdelice Martelozo</h3>
                     <p className="text-[var(--gold)] font-medium drop-shadow-md">Founder & Lead Consultant</p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet Valdenice Section */}
+      {/* Meet Valdelice Section */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -253,7 +253,7 @@ export default function Home() {
                 {/* Replace this div with an actual Image component when you have the photo */}
                 <Image 
                     src="/root/val-1.webp"
-                    alt="Valdenice Martelozo"
+                    alt="Valdelice Martelozo"
                     fill
                     className="object-cover object-top"
                     priority
@@ -263,12 +263,12 @@ export default function Home() {
             
             {/* Content Side */}
             <div>
-              <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Meet Valdenice</span>
+              <span className="text-[var(--gold)] font-semibold text-sm uppercase tracking-wider">Meet Valdelice</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-[var(--primary-blue)] mt-2 mb-6">
                 Not a Traditional Accountant
               </h2>
               <p className="text-[var(--text-gray)] text-lg mb-6 leading-relaxed">
-                Valdenice doesn&apos;t offer basic services like daily entries, payroll, or simple annual filings. 
+                Valdelice doesn&apos;t offer basic services like daily entries, payroll, or simple annual filings. 
                 Her work is <strong>advanced technical consulting</strong> to organize, correct, and structure 
                 US small and medium businesses living in accounting chaos.
               </p>
@@ -299,7 +299,7 @@ export default function Home() {
                 href="/about"
                 className="inline-flex items-center gap-2 text-[var(--gold)] font-semibold hover:text-[var(--gold-dark)] transition-colors"
               >
-                Learn more about Valdenice <ArrowRight className="w-4 h-4" />
+                Learn more about Valdelice <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function Home() {
                 We Don&apos;t Do Your Accountant&apos;s Job — We Fix the Company
               </h2>
               <p className="text-[var(--text-gray)] text-lg mb-8 leading-relaxed">
-                Valdenice is not a traditional accountant. She provides advanced technical consulting 
+                Valdelice is not a traditional accountant. She provides advanced technical consulting 
                 to organize, correct, and structure US SMBs living in accounting chaos — the same chaos 
                 the IRS and GAO point to as the direct cause of the $696 billion Tax Gap.
               </p>
@@ -376,10 +376,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Diagnostic", description: "We assess your current accounting maturity and identify critical gaps" },
-              { step: "02", title: "Risk Analysis", description: "We map compliance risks, process failures, and system issues" },
-              { step: "03", title: "Implementation", description: "We restructure processes, fix ERPs, and create internal controls" },
-              { step: "04", title: "Training & Support", description: "We train your team and provide ongoing preventive audits" }
+              { step: "01", title: "Deep & Evidence-Based Diagnostic", description: "Comprehensive assessment based on data and evidence to identify gaps and opportunities" },
+              { step: "02", title: "Standardization & Operational Governance", description: "Process standardization and implementation of operational governance controls" },
+              { step: "03", title: "Automation & Technology Integration", description: "Technology integration and automation of critical accounting routines" },
+              { step: "04", title: "Continuous Monitoring & Team Development", description: "Ongoing monitoring and continuous development of your team's capabilities" }
             ].map((item, index) => (
               <div key={index} className="relative text-center">
                 <div className="w-16 h-16 bg-[var(--gold)] rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">

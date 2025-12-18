@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, MessageCircle, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, Instagram } from 'lucide-react';
 
 const services = [
   { name: 'Accounting Governance', href: '/services#governance' },
@@ -49,20 +49,12 @@ export default function Footer() {
                 <MessageCircle className="w-5 h-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/vmartelozo.globalaccounting" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-[var(--gold)] rounded-full flex items-center justify-center transition-colors"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-[var(--gold)] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>

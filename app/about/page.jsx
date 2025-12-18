@@ -16,7 +16,7 @@ import {
 
 export const metadata = {
   title: "About Us | VMARTELOZO Global Accounting LLC",
-  description: "Learn about Valdenice and the Valtax Methodology - advanced technical consulting for US SMBs focused on Accounting Governance, Tax Compliance, and Automation.",
+  description: "Learn about Valdelice and the Valtax Methodology - advanced technical consulting for US SMBs focused on Accounting Governance, Tax Compliance, and Automation.",
 };
 
 const values = [
@@ -46,7 +46,7 @@ const differentials = [
   {
     icon: Users,
     title: "Not a Traditional Accountant",
-    description: "Valdenice doesn&apos;t do daily entries, payroll, or simple annual filings. She provides advanced technical consulting to fix the accounting chaos that causes the $696B Tax Gap."
+    description: "Valdelice doesn&apos;t do daily entries, payroll, or simple annual filings. She provides advanced technical consulting to fix the accounting chaos that causes the $696B Tax Gap."
   },
   {
     icon: BookOpen,
