@@ -176,24 +176,38 @@ export default function Home() {
             
             {/* Right Side - Valdelice Photo */}
             <div className="lg:col-span-5 animate-fade-in animation-delay-200">
-              <div className="relative">
-                {/* Decorative elements */}
-                <div className="absolute -top-8 -right-8 w-72 h-72 bg-[var(--gold)]/20 rounded-full blur-3xl" />
-                <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-[var(--primary-blue)]/10 rounded-full blur-2xl" />
+              <div className="relative flex items-center justify-center">
+                {/* Background shape - gradient blob behind photo */}
+                <div className="absolute w-[90%] h-[90%] bg-gradient-to-br from-[var(--primary-blue)] via-[var(--primary-blue-dark)] to-[var(--primary-blue)] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transform rotate-3" />
                 
-                {/* Photo */}
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+                {/* Decorative ring */}
+                <div className="absolute w-[95%] h-[95%] border-2 border-[var(--gold)]/30 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transform -rotate-6" />
+                
+                {/* Floating decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-[var(--gold)] rounded-full opacity-20 blur-xl" />
+                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[var(--primary-blue)]/30 rounded-full blur-2xl" />
+                
+                {/* Photo container */}
+                <div className="relative z-10 w-full max-w-md">
                   <Image 
-                    src="/root/hero.webp"
+                    src="/root/val-2.webp"
                     alt="Valdelice Martelozo"
-                    fill
-                    className="object-cover object-top"
+                    width={500}
+                    height={600}
+                    className="object-contain w-full h-auto drop-shadow-2xl"
                     priority
                   />
-                  {/* Subtle gradient overlay at bottom for text readability */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-6 pt-20">
-                    <h3 className="font-bold text-white text-2xl drop-shadow-lg">Valdelice Martelozo</h3>
-                    <p className="text-[var(--gold)] font-medium drop-shadow-md">Founder & Lead Consultant</p>
+                  
+                  {/* Name card floating */}
+                  <div className="absolute -bottom-4 -right-4 lg:right-0 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-gray-100">
+                    <h3 className="font-bold text-[var(--primary-blue)] text-lg">Valdelice Martelozo</h3>
+                    <p className="text-[var(--gold)] font-medium text-sm">Founder & Lead Consultant</p>
+                  </div>
+                  
+                  {/* Experience badge floating */}
+                  <div className="absolute -top-2 -left-2 lg:left-0 bg-[var(--gold)] text-white p-3 rounded-xl shadow-lg">
+                    <p className="text-xs font-medium uppercase tracking-wide">Valtax</p>
+                    <p className="text-lg font-bold">Methodology</p>
                   </div>
                 </div>
               </div>
