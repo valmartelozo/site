@@ -23,9 +23,9 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div className="hidden sm:flex items-center gap-6">
-              <a href="mailto:val.martelozo@gmail.com" className="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
+              <a href="mailto:manager@vmartelozo.com" className="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
                 <Mail className="w-4 h-4" />
-                val.martelozo@gmail.com
+                manager@vmartelozo.com
               </a>
               <a href="tel:+5519991079787" className="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
                 <Phone className="w-4 h-4" />

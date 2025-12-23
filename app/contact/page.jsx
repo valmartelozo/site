@@ -42,8 +42,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'val.martelozo@gmail.com',
-    href: 'mailto:val.martelozo@gmail.com',
+    value: 'manager@vmartelozo.com',
+    href: 'mailto:manager@vmartelozo.com',
     description: 'Send us an email anytime'
   },
   {
