@@ -183,7 +183,7 @@ export async function POST(request) {
       from: `"VMARTELOZO Global Accounting" <${process.env.GMAIL_USER}>`,
       to: process.env.CONTACT_EMAIL || process.env.GMAIL_USER,
       replyTo: email,
-      subject: `🔔 New Contact: ${subject}`,
+      subject: `🔔 New Contact Lead`,
       html: createEmailTemplate({ name, email, phone, subject, message }),
     };
 
