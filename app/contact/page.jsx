@@ -72,6 +72,34 @@ const contactInfo = [
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [phoneValue, setPhoneValue] = useState('');
+
+  const formatPhoneNumber = (value) => {
+    const numbers = value.replace(/\D/g, '');
+    
+    if (numbers.startsWith('1')) {
+      if (numbers.length <= 1) return '+1';
+      if (numbers.length <= 4) return `+1 (${numbers.slice(1)}`;
+      if (numbers.length <= 7) return `+1 (${numbers.slice(1, 4)}) ${numbers.slice(4)}`;
+      return `+1 (${numbers.slice(1, 4)}) ${numbers.slice(4, 7)}-${numbers.slice(7, 11)}`;
+    }
+    
+    if (numbers.startsWith('55')) {
+      if (numbers.length <= 2) return '+55';
+      if (numbers.length <= 4) return `+55 ${numbers.slice(2)}`;
+      if (numbers.length <= 9) return `+55 ${numbers.slice(2, 4)} ${numbers.slice(4)}`;
+      if (numbers.length <= 13) return `+55 ${numbers.slice(2, 4)} ${numbers.slice(4, 9)}-${numbers.slice(9)}`;
+      return `+55 ${numbers.slice(2, 4)} ${numbers.slice(4, 9)}-${numbers.slice(9, 13)}`;
+    }
+    
+    if (numbers.length === 0) return '';
+    return `+${numbers}`;
+  };
+
+  const handlePhoneChange = (e) => {
+    const formatted = formatPhoneNumber(e.target.value);
+    setPhoneValue(formatted);
+  };
 
   const {
     register,
@@ -251,8 +279,10 @@ export default function ContactPage() {
                         type="tel"
                         id="phone"
                         {...register('phone')}
+                        value={phoneValue}
+                        onChange={handlePhoneChange}
                         className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:border-transparent transition-all`}
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+1 (555) 123-4567 or +55 19 99999-9999"
                       />
                       {errors.phone && (
                         <p className="mt-1 text-sm text-red-500">{errors.phone.message}</p>
